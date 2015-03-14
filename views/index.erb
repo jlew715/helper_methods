@@ -1,8 +1,9 @@
-<%= bootstrap_alert "<strong>Warning! Warning!</strong> It looks like it's <strong>#{current_date_and_time}</strong>!", 'warning' %>
+<%= bootstrap_alert "<strong>Information!</strong> When you don't pass an alert type, it defaults to the information type! Incredible!" %>
 
 <section class="jumbotron text-center">
   <p>You know what time that is?</p>
   <h1>It's... CAT GIF TIME!</h1>
+  <h3>It's also <%= current_date_and_time %></h3>
 
   <figure>
     <%= image_tag @cat_image.url, 'CAT GIF!' %>
