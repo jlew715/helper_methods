@@ -6,7 +6,7 @@ module MethodsPracticeHelpers
   end
 
   def bootstrap_alert(message, type='info')
-    return "<div class=\"alert alert-"+type+"\"><a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times;</a>"+message+"</div>"
+    return "<div role=\"alert\" class=\"alert alert-"+type+" alert-dismissible\"><button type=\"button\" class=\"close\" aria-label=\"Close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">"+"&times;"+"</span></button>"+message+"</div>"
   end
 
   def current_date_and_time
