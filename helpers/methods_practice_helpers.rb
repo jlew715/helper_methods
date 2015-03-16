@@ -1,7 +1,7 @@
 module MethodsPracticeHelpers
 
   def image_tag(source, alternate_text)
-    return "<img src=\""+@cat_image.url+"\" class=\"img-responsive img-thumbnail\" alt=\""+alternate_text+"\">"
+    return "<img src=\""+source+"\" class=\"img-responsive img-thumbnail\" alt=\""+alternate_text+"\">"
     # My 20-week old kitten really enjoyed watching me test this one
   end
 
@@ -10,8 +10,8 @@ module MethodsPracticeHelpers
   end
 
   def current_date_and_time
-    curTime = Time.new
-    return curTime.strftime("%B").to_s+" "+curTime.day.to_s+", "+curTime.year.to_s+" at "+curTime.strftime("%I:%M%p").to_s+" where this server is located."
+    curTime = Time.now
+    return curTime.strftime("%-B %-e, %-Y at %-l:%M%P")
   end
 
 end
